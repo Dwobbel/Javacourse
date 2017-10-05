@@ -34,11 +34,21 @@ public class DataTypesApp {
         System.out.println(hexint);
         System.out.println(binint);
 
+        //final double PI = 3.14;
+        //PI = 3.15;
 
+        System.out.println("\nPagina 50");
+        System.out.println("----------");
+        System.out.println("Voor conversie:" + aShortInteger);
 
+        aByte = (byte) aShortInteger;
 
+        System.out.println("Na conversie:" + aByte);
 
+        System.out.println("Voor conversie:" + aCharacter);
+        anInteger = (int) aCharacter;
 
+        System.out.println("Na conversie:" + anInteger);
 
     }
 }
