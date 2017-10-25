@@ -14,7 +14,7 @@ public class Ex14_If_Else {
         float h = keyboard.nextFloat();
 
         double bmi = w / (h * h);
-        //System.out.println("bmi="+bmi);
+        System.out.println("bmi="+bmi);
         if (bmi < 20) {
             System.out.println("ondergewicht.");
         } else if (bmi < 25) {
