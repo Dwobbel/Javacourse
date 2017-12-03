@@ -4,10 +4,18 @@ package exercises.chapter8;
  * Created by KristofB on 22/11/2017.
  */
 public class Rectangle {
-    private int x;
-    private int y;
-    private int height;
-    private int width;
+    public int x;
+    public int y;
+    public int height;
+    public int width;
+    public static int count;
+    public static int ANGLES;
+
+    static {
+        count = 0;
+        ANGLES = 4;
+    }
+
     public Rectangle() {
         this(0,0);
     }
@@ -22,6 +30,7 @@ public class Rectangle {
         setHeight(height);
         setX(x);
         setY(y);
+        count++;
     }
     public Rectangle(Rectangle rectangle) {
         this(rectangle.getWidth(),rectangle.getHeight(), rectangle.getX(), rectangle.getY());
