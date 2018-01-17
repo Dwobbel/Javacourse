@@ -1,6 +1,6 @@
 package exercises.chapter8;
 
-import org.w3c.dom.css.Rect;
+import static exercises.chapter8.Rectangle.*;
 
 /**
  * Created by KristofB on 22/11/2017.
@@ -75,9 +75,9 @@ public class RectangleApp {
         System.out.println("de hoogte van de rechthoek is "+rechthoek3.getHeight());
         System.out.println("de x-coördinaat is "+rechthoek3.getX());
         System.out.println("de y-coördinaat is "+rechthoek3.getY());
-        System.out.println("deze rechthoek heeft " + rechthoek3.ANGLES + " hoeken");
+        System.out.println("deze rechthoek heeft " + ANGLES + " hoeken");
 
-        System.out.println("aantal rechthoeken in dit programma: " + rect.count);
+        System.out.println("aantal rechthoeken in dit programma: " + getCount());
 
     }
 }
