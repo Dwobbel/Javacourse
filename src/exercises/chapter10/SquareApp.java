@@ -39,8 +39,8 @@ public class SquareApp {
         System.out.println("-----");
         System.out.println("aantal vierkanten: " + meuh.getCount());
         Rectangle rechthoek1 = new Rectangle();
-        System.out.println("aantal rechthoeken: " + rechthoek1.getCount());
-        System.out.println("aantal vierkanten: " + meuh.getCount());
+        System.out.println("aantal rechthoeken: " + Rectangle.getCount());
+        System.out.println("aantal vierkanten: " + Square.getCount());
 
     }
 }
