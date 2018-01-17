@@ -1,5 +1,4 @@
 package exercises.chapter8;
-
 /**
  * Created by KristofB on 22/11/2017.
  */
@@ -8,12 +7,16 @@ public class Rectangle {
     public int y;
     public int height;
     public int width;
-    public static int count;
-    public static int ANGLES;
+    private static int count;
+    public static final int ANGLES;
 
     static {
         count = 0;
         ANGLES = 4;
+    }
+
+    public static int getCount() {
+        return count;
     }
 
     public Rectangle() {
@@ -70,4 +73,6 @@ public class Rectangle {
     public int getHeight() {return height;}
     public int getX() {return x;}
     public int getY() {return y;}
+
+
 }
