@@ -37,8 +37,8 @@ public class SquareApp {
         System.out.println("De omtrek is: " + meuh.getPerimeter());
 
         System.out.println("-----");
-        System.out.println("aantal vierkanten: " + meuh.getCount());
-        Rectangle rechthoek1 = new Rectangle();
+        System.out.println("aantal vierkanten: " + Square.getCount());
+        new Rectangle();
         System.out.println("aantal rechthoeken: " + Rectangle.getCount());
         System.out.println("aantal vierkanten: " + Square.getCount());
 
