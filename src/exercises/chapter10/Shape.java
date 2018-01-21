@@ -1,8 +1,8 @@
 package exercises.chapter10;
 
 abstract public class Shape {
-    public int x;
-    public int y;
+    private int x;
+    private int y;
     private static int count;
 
     public static int getCount() {
@@ -14,8 +14,8 @@ abstract public class Shape {
     }
 
     public Shape(int x, int y) {
-        this.getX();
-        this.getY();
+        this.setX(0);
+        this.setY(0);
     }
 
     public int getX() {
