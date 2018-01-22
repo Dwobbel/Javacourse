@@ -6,7 +6,7 @@ public class testapp {
     public static void main(String[] args) {
 
         Bird piet = new Bird();
-        piet.setName("test");
+        //piet.setName("test");
         System.out.println(piet.getName());
 
     }

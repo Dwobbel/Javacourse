@@ -9,7 +9,7 @@ abstract public class Animal {
     }
 
     public Animal(String name){
-        this.getName();
+        this.setName(name);
     }
 
 
