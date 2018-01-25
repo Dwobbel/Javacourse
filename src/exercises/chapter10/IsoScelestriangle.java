@@ -34,4 +34,6 @@ public class IsoScelestriangle extends Triangle {
         super.setP(p);
     }
 
+
+
 }

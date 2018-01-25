@@ -1,33 +1,27 @@
-package exercises.chapter10;
+package solutions.javabasics.chapter10.exercise9.graphics;
 
-abstract public class Shape {
+/**
+ * Created by JonathanSyntra on 26/12/2016.
+ */
+public abstract class Shape {
     private int x;
     private int y;
     private static int count = 0;
 
-    public static int getCount() {
-        return count;
-    }
-
-    public Shape() {
-        this(0, 0);
-    }
-
-    public Shape(int x, int y) {
-        this.setX(0);
-        this.setY(0);
+    {
+      count++;
     }
 
     public int getX() {
         return x;
     }
 
-    public int getY() {
-        return y;
-    }
-
     public void setX(int x) {
         this.x = x;
+    }
+
+    public int getY() {
+        return y;
     }
 
     public void setY(int y) {
@@ -35,11 +29,15 @@ abstract public class Shape {
     }
 
     public void setPosition(int x, int y){
-        this.x = x<=0?0:x;
-        this.y = y<=0?0:y;
+        this.setX(x);
+        this.setY(y);
     }
 
     public abstract double getArea();
+
     public abstract double getPerimeter();
 
+    public static int getCount() {
+        return count;
+    }
 }

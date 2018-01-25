@@ -48,6 +48,8 @@ public class Square extends Rectangle {
         super.setWidth(side);
     }
 
-
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

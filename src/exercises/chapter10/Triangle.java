@@ -2,11 +2,14 @@ package exercises.chapter10;
 
 import exercises.chapter10.Shape;
 
+import java.util.Objects;
+
 public class Triangle extends Shape {
     private int w;
     private int h;
     private int p;
-    private static int count;
+    private static int count = 0;
+    public static final int ANGLES = 3;
 
     static {count = 0;}
 
@@ -59,7 +62,7 @@ public class Triangle extends Shape {
         this.p = p;
     }
     public double getArea() {
-        return w*h/2;
+        return this.w*this.h/2;
     }
     public double getPerimeter() {
         double hypotenuse = Math.pow(Math.pow(w, 2) + Math.pow(h, 2),0.5);
@@ -67,4 +70,26 @@ public class Triangle extends Shape {
         return perimeter;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Triangle triangle = (Triangle) o;
+        return getW() == triangle.getW() &&
+                getH() == triangle.getH() &&
+                getP() == triangle.getP();
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(getW(), getH(), getP());
+    }
+
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "w=" + w +
+                ", h=" + h +
+                ", p=" + p +
+                "} ";
+    }
 }

@@ -21,5 +21,24 @@ public class ShapeApp {
         driehoek.setW(10);
         System.out.println(driehoek.getW());
 
+        System.out.println(vierkant.toString());
+        System.out.println(rechthoek.toString());
+        System.out.println(driehoek.toString());
+        System.out.println(wtf.toString());
+
+        vierkant.setX(10);
+        vierkant.setY(10);
+        System.out.println(vierkant.hashCode());
+
+        Rectangle rechthoek2 = new Rectangle(5, 5, 10,10);
+        System.out.println(rechthoek2.hashCode());
+        System.out.println(vierkant.equals(rechthoek2));
+
+        Square vierkant2 = new Square(5,10,10);
+
+        System.out.println(vierkant.equals(vierkant2));
+
+
+
     }
 }

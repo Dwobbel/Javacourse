@@ -1,9 +1,11 @@
 package exercises.chapter8;
 
+import exercises.chapter10.Shape;
+
 /**
  * Created by KristofB on 6/12/2017.
  */
-public class Circle {
+public class Circle extends Shape {
     private int x;
     private int y;
     private static int count;

@@ -1,8 +1,13 @@
 package exercises.chapter8;
+
+import exercises.chapter10.Shape;
+
+import java.util.Objects;
+
 /**
  * Created by KristofB on 22/11/2017.
  */
-public class Rectangle {
+public class Rectangle extends Shape {
     public int x;
     public int y;
     public int height;
@@ -74,5 +79,30 @@ public class Rectangle {
     public int getX() {return x;}
     public int getY() {return y;}
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return getX() == rectangle.getX() &&
+                getY() == rectangle.getY() &&
+                getHeight() == rectangle.getHeight() &&
+                getWidth() == rectangle.getWidth();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getX(), getY(), getHeight(), getWidth());
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "x=" + x +
+                ", y=" + y +
+                ", height=" + height +
+                ", width=" + width +
+                '}';
+    }
 
 }
