@@ -12,7 +12,7 @@ public class Drawing {
         int vrij = getFreeLocation();
         if (vrij > -1) {
             shapes[vrij] = shape;
-            size ++;
+            size++;
         }
     }
 
@@ -20,7 +20,7 @@ public class Drawing {
         if (shape == null) {
             return;
         }
-        for(int i = 0; i < shapes.length; i++) {
+        for (int i = 0; i < shapes.length; i++) {
             if (shape.equals(shapes[i])) {
                 shapes[i] = null;
                 size--;
@@ -42,11 +42,17 @@ public class Drawing {
     }
 
     private int getFreeLocation() {
-        for (int i = 0; i < shapes.length; i++) {
-            if (shapes[i] == null)
+        //return -1; //bij -1 zit de array vol
+        for (int i = 0; i < shapes.length; i++)
+            if (shapes[i] == null) {
                 return i;
-        }
-        return -1; //bij -1 zit de array vol
+            } else {
+                int HuidigeLengte = shapes.length;
+                Shape[] NewShapes = new Shape[HuidigeLengte + 1];
+                NewShapes[i] = shapes[i];
+                return NewShapes.length;
+            }
+        return -1;
     }
 
     private void clear() {
