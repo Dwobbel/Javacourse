@@ -46,14 +46,19 @@ public class Drawing {
         for (int i = 0; i < shapes.length; i++)
             if (shapes[i] == null) {
                 return i;
-            } else {
-                int HuidigeLengte = shapes.length;
-                Shape[] NewShapes = new Shape[HuidigeLengte + 1];
-                NewShapes[i] = shapes[i];
-                return NewShapes.length;
             }
+               // expandShapesArray();
+
         return -1;
     }
+
+   /* private void expandShapesArray() {
+        Shape[] shapesNew = new shapes[shapes.length + 100];
+        for (int i = 0; i < shapes.length; i++) {
+            shapesNew[i] = shapes[i];
+        }
+
+    }*/
 
     private void clear() {
         for (Shape shape : shapes) {
