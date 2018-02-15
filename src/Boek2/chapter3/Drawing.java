@@ -11,12 +11,12 @@ public class Drawing {
         size = 0;
     }
 
-    public void addShape(Shape shape){
-        boolean present = isPresent(shape);
+    public void addShape(Drawable d){
+        boolean present = isPresent(d);
         if(!present){
             int freeLocation = getFreeLocation();
             //if (freeLocation >= 0){
-                shapes[freeLocation] = shape;
+                Drawable[freeLocation] = d;
                 size++;
             //}
         }
@@ -41,9 +41,9 @@ public class Drawing {
         return size;
     }
 
-    private boolean isPresent(Shape shape){
+    private boolean isPresent(Drawable d){
         for (Shape shapeInArray : shapes) {
-            if(shapeInArray != null && shapeInArray.equals(shape)){
+            if(shapeInArray != null && shapeInArray.equals(d)){
                 return true;
             }
         }

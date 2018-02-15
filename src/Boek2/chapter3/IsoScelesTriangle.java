@@ -2,7 +2,7 @@ package Boek2.chapter3;
 /**
  * Created by JonathanSyntra on 26/12/2016.
  */
-public class IsoScelesTriangle extends Triangle {
+public class IsoScelesTriangle extends Triangle implements Drawable {
     private static int count = 0;
 
     {

@@ -6,7 +6,7 @@ package Boek2.chapter3;
 public class PigApp {
     public static void main(String[] args) {
         MyPig myPig = new MyPig();
-        myPig.grunt();;
+        myPig.grunt();
         myPig.fly();
     }
 }

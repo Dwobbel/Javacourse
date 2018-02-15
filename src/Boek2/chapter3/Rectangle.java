@@ -1,8 +1,11 @@
 package Boek2.chapter3;
+
+import javafx.scene.canvas.GraphicsContext;
+
 /**
  * Created by JonathanSyntra on 4/12/2016.
  */
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
     private static int count;
     public static final int ANGLES;
     private int height;
@@ -102,5 +105,10 @@ public class Rectangle extends Shape {
         result = 31 * result + getX();
         result = 31 * result + getY();
         return result;
+    }
+
+    @Override
+    public void draw(GraphicsContext g) {
+
     }
 }
