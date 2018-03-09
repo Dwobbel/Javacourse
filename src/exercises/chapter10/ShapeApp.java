@@ -3,7 +3,6 @@ package exercises.chapter10;
 import exercises.chapter10.Shape;
 import exercises.chapter8.Rectangle;
 
-import org.w3c.dom.css.Rect;
 
 public class ShapeApp {
     public static void main(String[] args) {
