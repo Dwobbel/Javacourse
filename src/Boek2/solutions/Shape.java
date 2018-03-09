@@ -1,8 +1,9 @@
-package Boek2.chapter3;
+package Boek2.solutions;
+
 /**
  * Created by JonathanSyntra on 26/12/2016.
  */
-public abstract class Shape implements Drawable{
+public abstract class Shape implements Drawable {
     private int x;
     private int y;
     private static int count = 0;
@@ -38,9 +39,5 @@ public abstract class Shape implements Drawable{
 
     public static int getCount() {
         return count;
-    }
-
-    public void draw(){
-
     }
 }

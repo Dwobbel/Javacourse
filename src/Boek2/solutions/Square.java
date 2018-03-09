@@ -1,8 +1,9 @@
-package Boek2.chapter3;
+package Boek2.solutions;
+
 /**
  * Created by JonathanSyntra on 5/12/2016.
  */
-public class Square extends Rectangle implements Drawable{
+public class Square extends Rectangle {
     public final String description = super.description + " (square)";
     private static int count = 0;
 

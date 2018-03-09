@@ -1,11 +1,11 @@
-package Boek2.chapter3;
+package Boek2.chapter4.Ex4;
 
-import javafx.scene.canvas.GraphicsContext;
+import java.awt.*;
 
 /**
  * Created by JonathanSyntra on 26/12/2016.
  */
-public class Triangle extends Shape implements Drawable{
+public class Triangle extends Shape {
     public static final int ANGLES = 3;
     private static int count = 0;
     private int height;
@@ -115,7 +115,19 @@ public class Triangle extends Shape implements Drawable{
     }
 
     @Override
-    public void draw(GraphicsContext g) {
+    public void scale(int s) {
+        float factor = (float)s / 100;
+        int newHeight = (int)(getHeight() * factor);
+        int newWidth = (int)(getWidth() * factor);
+        int newPerpendicular = (int)(getPerpendicular() * factor);
+
+        setHeight(newHeight);
+        setWidth(newWidth);
+        setPerpendicular(newPerpendicular);
+    }
+
+    @Override
+    public void draw(Graphics g) {
 
     }
 }

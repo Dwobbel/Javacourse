@@ -1,11 +1,11 @@
-package Boek2.chapter3;
+package Boek2.chapter4.Ex4;
 
-import javafx.scene.canvas.GraphicsContext;
+import java.awt.*;
 
 /**
  * Created by JonathanSyntra on 4/12/2016.
  */
-public class Rectangle extends Shape implements Drawable {
+public class Rectangle extends Shape {
     private static int count;
     public static final int ANGLES;
     private int height;
@@ -108,7 +108,17 @@ public class Rectangle extends Shape implements Drawable {
     }
 
     @Override
-    public void draw(GraphicsContext g) {
+    public void scale(int s) {
+        float factor = (float)s / 100;
+        int newHeight = (int)(getHeight() * factor);
+        int newWidth = (int)(getWidth() * factor);
+
+        setHeight(newHeight);
+        setWidth(newWidth);
+    }
+
+    @Override
+    public void draw(Graphics g) {
 
     }
 }

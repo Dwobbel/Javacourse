@@ -2,7 +2,6 @@ package exercises.chapter10;
 
 import exercises.chapter8.Circle;
 import exercises.chapter8.Rectangle;
-import org.w3c.dom.css.Rect;
 
 /**
  * Created by KristofB on 24/01/2018.

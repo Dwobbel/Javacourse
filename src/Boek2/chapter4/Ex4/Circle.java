@@ -1,5 +1,7 @@
-package Boek2.chapter3;
-;
+package Boek2.chapter4.Ex4;
+
+import java.awt.*;
+
 /**
  * Created by JonathanSyntra on 5/12/2016.
  */
@@ -83,5 +85,18 @@ public class Circle extends Shape {
     @Override
     public int hashCode() {
         return getRadius() + getX()*11 + getY()*3;
+    }
+
+    @Override
+    public void scale(int s) {
+        float factor = (float)s / 100;
+        int newRadius = (int)(getRadius() * factor);
+
+        setRadius(newRadius);
+    }
+
+    @Override
+    public void draw(Graphics g) {
+
     }
 }

@@ -1,8 +1,9 @@
-package Boek2.chapter3;
+package Boek2.chapter4.Ex4;
+
 /**
  * Created by JonathanSyntra on 26/12/2016.
  */
-public class IsoScelesTriangle extends Triangle implements Drawable {
+public class IsoScelesTriangle extends Triangle {
     private static int count = 0;
 
     {
